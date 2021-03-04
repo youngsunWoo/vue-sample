@@ -6,9 +6,6 @@
 
 <script>
 export default {
-  name: 'This is TestPage',
-  props: {
-    msg: String
-  }
+  name: 'testPage',
 }
 </script>

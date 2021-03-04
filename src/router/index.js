@@ -1,17 +1,3 @@
-// export const constantRoutes = [
-//  {
-//     path: '/',
-//     component: Layout,
-//     redirect: '/mainpage',
-//     children: [{
-//       path: 'mainpage',
-//       name: 'Mainpage',
-//       component: () => import('@/views/mainpage'),
-//     }]
-//   },
-// ]
-
-
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Layout from '@/layout'
