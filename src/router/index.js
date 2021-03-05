@@ -38,18 +38,16 @@ export const constantRoutes = [
     children: [
       {path: 'index',name: 'sample', component: () => import('@/views/samples/index')}, 
       {path: 'apiCall', name: 'sample-api', component: () => import('@/views/samples/apiCall')},
-      {path: 'store', name: 'sample-store', component: () => import('@/views/samples/store')}
+      {path: 'store', name: 'sample-store', component: () => import('@/views/samples/store')},
+      {path: 'form', name: 'form', component: () => import('@/views/samples/form')},
+      {path: 'form2', name: 'form2', component: () => import('@/views/samples/form2')},
+      { path: 'router', name : 'router', component: () => import('@/views/samples/router'), 
+        props: (route) => ({ query: route.query.user_id})
+      },
     ]
   },
 
-  {
-    path: '/form',
-    component: Layout,
-    children: [
-      {path: 'index', name: 'Form', component: () => import('@/views/form/index')}
-    ]
-  },
-
+  // if enter the incorrect url path, redirect to 404 error page
   // 404 page must be placed at the end
   { path: '*',
    redirect: '/404', 

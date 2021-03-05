@@ -1,13 +1,15 @@
 <template>
   <div class="sample-container">
     <h1> Sample View for Api call</h1>
-      <input v-model="id" />
-      <button @click="clickEvent">UserInfo</button>
+      user id : <input v-model="id" />
+      <br>
+      <br>
+      <button @click="clickEvent">call Get</button>
   </div>
 </template>
 
 <script>
-import {getUsers,getUserById} from '@/api/users'
+import {getUsers, getUserById} from '@/api/users'
 
 export default {
   name: 'apiCallSample',

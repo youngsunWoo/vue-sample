@@ -1,10 +1,13 @@
 <template>
   <div>
-    <h1>User View</h1>
+    <h1> Sample View for Vuex</h1>
     <p> userid : {{userId}} </p>
+    <p> name : {{name}} </p>
+    <p> userName : {{userName}} </p>
     <p> useremail : {{email}} </p>
 
-    <button @click="callActions">UserInfo</button>
+    <button @click="callStoreActions">callActions</button>
+    <button @click="callMutations">callMutations</button>
   </div>
 </template>
 
@@ -16,8 +19,6 @@ export default {
   data() {
     return {
       id: '',
-      name: '',
-      userName : '',
       //access store state values directiy
       //recommended using mapGetters in computed
       email: this.$store.state.users.email,
@@ -26,7 +27,7 @@ export default {
   methods : {
     //call store's Acitons
     callStoreActions() {
-      const params = {}
+      const params = {id : 1}
       this.$store.dispatch('users/FETCH_USERS', params);
       //this.$store.dispatch('{namespace}/{functionName},{paramObject});
     },
@@ -40,7 +41,9 @@ export default {
   computed: {
     //get store statues by Getter
     ...mapGetters([
-      'userId'
+      'userId',
+      'name',
+      'userName'
     ])
   },
 }
