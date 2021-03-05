@@ -1,9 +1,9 @@
 import { getUserById } from "@/api/users";
 
 export const state =  {
-    id : 's',
+    id : 'sunny',
     name : '', 
-    email : '', 
+    email : 'wooys@nice.co.kr', 
     userName : '', 
   };
 
