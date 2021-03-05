@@ -1,13 +1,13 @@
-import { getUserById } from "@/api/sample";
+import { getUserById } from "@/api/users";
 
-const state =  {
-    id : '',
+export const state =  {
+    id : 's',
     name : '', 
     email : '', 
     userName : '', 
   };
 
-const mutations = {
+export const mutations = {
     SET_ID (state, value){
       state.id = value
     },
@@ -20,9 +20,9 @@ const mutations = {
     SET_EMAIL(state, value){
       state.email = value;
     }
-  }
+}
 
-  const actions = {
+export const actions = {
     FETCH_USERS({commit},param){
       getUserById(param.id)
       .then(data => {
@@ -30,12 +30,5 @@ const mutations = {
         commit('SET_NAME',data.name);
         commit('SET_USERNAME',data.userName);
       })
-    }
-  }
-
-  export default {
-    state,
-    mutations,
-    actions,
-  }
-  
+    },
+}
