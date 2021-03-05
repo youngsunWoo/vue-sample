@@ -31,6 +31,7 @@ npm run build
   - view이름/ : 특정 view에서만 사용하는 컴포넌트들은 view파일명 폴더 하위에 배치한다.
 - layout/ : 공통 레이아웃 설정 vue 
 - router/ : 라우터 설정
+- service/ : 비동기 API 호출제외한 js로 수행되어야할 스크립트
 - store/ : 상태관리 vuex
   - modules/ 
     - index.js에서 moduels 하위 파일명으로 namespace를 자동 등록한다. 

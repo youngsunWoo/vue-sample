@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
-    <h3> Form sample Page </h3>
-    
+    <h3> sample Page for Form</h3>
+
     <form ref="form" :model="form" labwidth="120px">
       <p> id </p>
       <input v-model="form.id" />
