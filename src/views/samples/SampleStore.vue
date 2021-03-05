@@ -39,7 +39,7 @@ export default {
     }
   },
   computed: {
-    //get store statues by Getter
+    //get store state values by Getter
     ...mapGetters([
       'userId',
       'name',

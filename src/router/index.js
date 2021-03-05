@@ -36,12 +36,12 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/samples/index',
     children: [
-      {path: 'index',name: 'sample', component: () => import('@/views/samples/index')}, 
-      {path: 'apiCall', name: 'sample-api', component: () => import('@/views/samples/apiCall')},
-      {path: 'store', name: 'sample-store', component: () => import('@/views/samples/store')},
-      {path: 'form', name: 'form', component: () => import('@/views/samples/form')},
-      {path: 'form2', name: 'form2', component: () => import('@/views/samples/form2')},
-      { path: 'router', name : 'router', component: () => import('@/views/samples/router'), 
+      {path: 'index',name: 'sample', component: () => import('@/views/samples/Index')}, 
+      {path: 'apiCall', name: 'sample-api', component: () => import('@/views/samples/SampleApiCall')},
+      {path: 'store', name: 'sample-store', component: () => import('@/views/samples/SampleStore')},
+      {path: 'form', name: 'form', component: () => import('@/views/samples/SampleForm')},
+      {path: 'form2', name: 'form2', component: () => import('@/views/samples/SampleForm2')},
+      { path: 'router', name : 'router', component: () => import('@/views/samples/SampleRouter'), 
         props: (route) => ({ query: route.query.user_id})
       },
     ]
