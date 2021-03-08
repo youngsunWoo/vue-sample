@@ -20,8 +20,8 @@ npm run build
 ----
 ## Package Instruction
 1. public
-- favicon.ico : 
-- index.html : 
+- favicon.ico 
+- index.html 
 
 2. src
 - api/ : 비동기 API 호출

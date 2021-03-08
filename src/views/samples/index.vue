@@ -16,6 +16,13 @@
       <router-link to="/samples/router?user_id=1" tag="li" >
          <a class="nav-link">router with Param</a>
       </router-link>  
+
+      <router-link to="/samples/excel" tag="li" >
+         <a class="nav-link">excel</a>
+      </router-link>
+      <router-link to="/samples/chart" tag="li" >
+         <a class="nav-link">chart</a>
+      </router-link>
   </div>
 </template>
 
