@@ -14,18 +14,13 @@
   "dependencies": {
     "@vue/cli": "^4.5.11",
     "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
     "chart.js": "^2.9.4",
-    "connect-history-api-fallback": "^1.6.0",
-    "core-js": "^3.9.1",
-    "element-ui": "^2.15.1",
     "file-saver": "^2.0.5",
-    "firebase": "^8.2.9",
     "vue": "^2.6.12",
     "vue-chartjs": "^3.5.1",
+    "vue-gtag": "^1.11.0",
     "vue-router": "^3.5.1",
     "vue-router-layout": "^0.3.0",
-    "vue-spinner": "^1.0.4",
     "vuex": "^3.6.2",
     "xlsx": "^0.16.9"
   },
@@ -35,10 +30,7 @@
     "@vue/cli-service": "^4.5.11",
     "babel-eslint": "^10.0.1",
     "eslint": "^7.21.0",
-    "eslint-plugin-vue": "^7.7.0",
-    "sass": "^1.32.8",
-    "sass-loader": "^11.0.1",
-    "vue-template-compiler": "^2.6.12"
+    "eslint-plugin-vue": "^7.7.0"
   },
   "eslintConfig": {
     "root": true,
